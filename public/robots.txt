@@ -1,14 +1,26 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /impressum
+Disallow: /datenschutz
 
 User-agent: Bingbot
 Allow: /
+Disallow: /impressum
+Disallow: /datenschutz
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /impressum
+Disallow: /datenschutz
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /impressum
+Disallow: /datenschutz
 
 User-agent: *
 Allow: /
+Disallow: /impressum
+Disallow: /datenschutz
+
+Sitemap: https://saffronpalace.de/sitemap.xml

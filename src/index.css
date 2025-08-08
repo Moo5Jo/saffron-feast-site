@@ -8,33 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Indian Restaurant Color Palette */
+    --background: 35 60% 97%;
+    --foreground: 25 50% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 50% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 50% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Saffron Gold Primary */
+    --primary: 45 100% 50%;
+    --primary-foreground: 25 50% 15%;
+    --primary-glow: 45 100% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm Terracotta Secondary */
+    --secondary: 15 80% 45%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft Cream Muted */
+    --muted: 35 40% 95%;
+    --muted-foreground: 25 30% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Deep Maroon Accent */
+    --accent: 0 70% 35%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 30% 85%;
+    --input: 35 30% 90%;
+    --ring: 45 100% 50%;
+
+    /* Custom Design Tokens */
+    --spice-orange: 25 90% 55%;
+    --warm-cream: 35 50% 96%;
+    --deep-brown: 25 60% 20%;
+    
+    /* Gradients */
+    --gradient-saffron: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--warm-cream)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-deep: 0 20px 60px -15px hsl(var(--accent) / 0.3);
 
     --radius: 0.5rem;
 
@@ -56,33 +75,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark theme for Indian Restaurant */
+    --background: 25 40% 8%;
+    --foreground: 35 60% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 30% 12%;
+    --card-foreground: 35 60% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 30% 12%;
+    --popover-foreground: 35 60% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 45 90% 60%;
+    --primary-foreground: 25 50% 15%;
+    --primary-glow: 45 80% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 15 60% 25%;
+    --secondary-foreground: 35 60% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 20% 15%;
+    --muted-foreground: 35 30% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 60% 45%;
+    --accent-foreground: 35 60% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 35 60% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 45 90% 60%;
+
+    /* Dark theme custom tokens */
+    --spice-orange: 25 70% 45%;
+    --warm-cream: 25 20% 15%;
+    --deep-brown: 25 80% 85%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
